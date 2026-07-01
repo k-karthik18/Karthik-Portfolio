@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Kosuri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Floating Capsule Navbar -->
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#" class="logo">Karthik</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Work</a>
+            </div>
+            <!-- Dark mode button (visual placeholder matching reference) -->
+            <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+            </button>
+            <a href="mailto:kosurikarthik07@gmail.com" class="nav-btn">Let's Talk</a>
+        </nav>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <!-- Background shapes for Hero (Mirrors reference exactly) -->
+            <!-- Left Top Large Ring -->
+            <div class="bg-shape shape-ring" style="width: 220px; height: 220px; top: -100px; left: -140px;"></div>
+            <!-- Left Mid Solid Blue Dot -->
+            <div class="bg-shape shape-solid-blue" style="width: 32px; height: 32px; top: 240px; left: -100px;"></div>
+
+            <!-- Right Top Soft Blue Glow -->
+            <div class="bg-shape shape-blue-glow" style="width: 450px; height: 450px; top: -150px; right: -100px;">
+            </div>
+            <!-- Right Top Double Rings -->
+            <div class="bg-shape shape-ring" style="width: 200px; height: 200px; top: -50px; right: -120px;"></div>
+            <div class="bg-shape shape-ring" style="width: 130px; height: 130px; top: 30px; right: -70px;"></div>
+
+            <!-- Right Mid Faint Filled Circle -->
+            <div class="bg-shape shape-filled-faint" style="width: 140px; height: 140px; top: 160px; right: -130px;">
+            </div>
+            <!-- Right Mid Tiny Dot -->
+            <div class="bg-shape shape-tiny-dot" style="width: 10px; height: 10px; top: 360px; right: -150px;"></div>
+
+            <!-- Right Bottom Double Prisms (Rotated Squares) -->
+            <div class="bg-shape shape-prism" style="width: 90px; height: 90px; top: 460px; right: -70px;"></div>
+            <div class="bg-shape shape-prism" style="width: 50px; height: 50px; top: 510px; right: -30px;"></div>
+            <h1>Hey, I'm <span class="hero-name">Karthik Kosuri</span></h1>
+
+            <div class="roles-wrapper">
+                <p id="typing-role">AI/ML Enthusiast</p>
+            </div>
+
+            <p class="hero-text">
+                I'm a passionate developer building intelligent solutions at the intersection of Machine Learning, Deep
+                Learning, and Full-Stack Engineering. Creating performance-optimized interfaces and exploring new
+                horizons in generative AI.
+            </p>
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Currently: Available
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-pill primary">View my work &rarr;</a>
+                <a href="https://github.com/k-karthik18" target="_blank" class="btn-pill secondary">
+                    <svg style="width:16px; height:16px; fill:currentColor; vertical-align:middle; margin-right:4px;"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+                <div class="scroll-explore">
+                    <span class="scroll-text">Scroll to explore</span>
+                    <div class="mouse-icon">
+                        <div class="mouse-wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Text & Techstack only, Image ignored as requested) -->
+        <section id="about">
+            <!-- Background shapes for About -->
+            <!-- Right Dots & Prism -->
+            <div class="bg-shape shape-dots" style="width: 80px; height: 80px; top: 15%; right: -90px;"></div>
+            <div class="bg-shape shape-prism" style="width: 60px; height: 60px; top: 40%; right: -50px;"></div>
+            <span class="section-tag">001 — About</span>
+            <h2>Crafting digital experiences that matter</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am currently pursuing my education at <strong>VIT-AP University</strong> (2023 – Present) with
+                        a CGPA of <strong>8.99</strong>, having completed my Intermediate studies at Pragati Jr. College
+                        scoring <strong>97.6%</strong>.
+                    </p>
+                    <p>
+                        My technical interest lies deeply in developing smart, end-to-end applications. Through hands-on
+                        internships and independent projects, I have combined core Full-Stack technologies with advanced
+                        Artificial Intelligence pipelines.
+                    </p>
+                </div>
+
+                <h4 class="skills-title">My Tech Stack & Skills</h4>
+                <div class="skills-groups">
+                    <div class="skills-group">
+                        <span class="group-title">Languages</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <span class="group-title">Web Development</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <span class="group-title">AI / ML</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Reinforcement Learning</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Generative AI</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <span class="group-title">Databases</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <span class="group-title">Data & Libraries</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">OpenAI Whisper</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="skills-group">
+                        <span class="group-title">DevOps & Cloud</span>
+                        <div class="skills-list">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Render</span>
+                            <span class="skill-tag">Hostinger VPS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (with appropriate spacing/gap as requested) -->
+        <section id="experience" style="margin-top: 4rem; margin-bottom: 4rem;">
+            <!-- Background shapes for Experience -->
+            <!-- Left Dots -->
+            <div class="bg-shape shape-dots" style="width: 100px; height: 100px; top: 20%; left: -60px;"></div>
+            <!-- Right Ring -->
+            <div class="bg-shape shape-ring" style="width: 140px; height: 140px; top: 50%; right: -80px;"></div>
+            <span class="section-tag">002 — Experience</span>
+            <h2>Work Experience</h2>
+
+            <div class="experience-timeline">
+                <!-- Exp 1 -->
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>SDE Intern</h3>
+                            <span class="exp-company">Glorious Enviro Space and Soft Technologies Pvt. Ltd.</span>
+                        </div>
+                        <span class="exp-period">Mar 2026 – Jun 2026</span>
+                    </div>
+                    <ul class="exp-highlights">
+                        <li>Developed complete role-based web modules, creating dedicated dashboards and workflows for
+                            Admin, User, and Applicant profiles.</li>
+                        <li>Built a secure authentication and user management system using Supabase, focusing on data
+                            privacy and access control.</li>
+                        <li>Managed the full deployment of the web application on a Hostinger VPS (Ubuntu Linux),
+                            ensuring a stable and optimized server performance.</li>
+                    </ul>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-title">
+                            <h3>AI/ML Intern</h3>
+                            <span class="exp-company">Ecnodev IT Solutions Pvt. Ltd.</span>
+                        </div>
+                        <span class="exp-period">Jun 2025 – Sep 2025</span>
+                    </div>
+                    <ul class="exp-highlights">
+                        <li>Built several Machine Learning and Generative AI projects, including a Customer Churn
+                            Prediction model, a RAG Chatbot, and a Smart Home system.</li>
+                        <li>Worked extensively with modern AI tools like Retrieval-Augmented Generation (RAG), Vector
+                            Databases, and embeddings to create reliable LLM applications.</li>
+                        <li>Contributed to an AI-powered Job Recommendation System, using deep learning to match
+                            candidate profiles with the right career opportunities.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Horizontal layout with browser mockups as in Screenshot 3) -->
+        <section id="projects">
+            <!-- Background shapes for Projects -->
+            <!-- Right Solid Blue Dot -->
+            <div class="bg-shape shape-solid-blue" style="width: 25px; height: 25px; top: 40%; right: -70px;"></div>
+            <span class="section-tag">004 — Featured Works</span>
+            <h2>Selected projects that showcase my expertise</h2>
+
+            <div class="projects-list">
+
+                <!-- Project 1 -->
+                <div class="project-card-horizontal">
+                    <div class="project-visual">
+                        <div class="browser-header">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="speech_emotion_recognition.png"
+                                alt="Speech Emotion Recognition pipeline: vocal waves, neural networks, and emotion predictions.">
+                            <span class="project-badge-live">92.89% Acc</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>DEEP LEARNING</span>
+                            <span>2026</span>
+                        </div>
+                        <h3><a href="https://github.com/k-karthik18/Speech-Emotion-Recognition" target="_blank">Speech
+                                Emotion Recognition</a></h3>
+                        <p class="project-description">
+                            Ensemble pipeline classifying emotions from ~54,800 audio samples across 4 datasets.
+                            Features an optimized 1D CNN + CNN-BiLSTM architecture with LIME explainable AI integration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Deep Learning</span>
+                            <span class="project-tag">CNN</span>
+                            <span class="project-tag">BiLSTM</span>
+                            <span class="project-tag">LIME</span>
+                            <span class="project-tag">Audio Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/k-karthik18/Speech-Emotion-Recognition" target="_blank"
+                                class="project-link">
+                                GitHub Code ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card-horizontal">
+                    <div class="project-visual">
+                        <div class="browser-header">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="pacman_ai.png"
+                                alt="Pacman AI Decision Dashboard: AI agents navigating mazes with real-time decision visualization.">
+                            <span class="project-badge-live">Live Demo</span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>REINFORCEMENT LEARNING</span>
+                            <span>2026</span>
+                        </div>
+                        <h3><a href="https://github.com/k-karthik18/PACMAN-RL" target="_blank">Pacman AI</a></h3>
+                        <p class="project-description">
+                            4 distinct AI agents for Pac-Man (Tabular Q-Learning, Approximate Q-Learning, SARSA,
+                            Heuristic Reflex) running alongside a React.js dashboard for real-time decision
+                            visualization.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Reinforcement Learning</span>
+                            <span class="project-tag">Q-Learning</span>
+                            <span class="project-tag">SARSA</span>
+                            <span class="project-tag">React.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/k-karthik18/PACMAN-RL" target="_blank" class="project-link">
+                                GitHub Code ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card-horizontal">
+                    <div class="project-visual">
+                        <div class="browser-header">
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                            <span class="browser-dot"></span>
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="weather_prediction.png"
+                                alt="Weather Prediction System layout mapping variables to ensemble Decision Trees, Random Forests, and SVM forecasting graphs.">
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-meta">
+                            <span>MACHINE LEARNING</span>
+                            <span>2025</span>
+                        </div>
+                        <h3><a href="https://github.com/k-karthik18/Weather-Prediction-using-ML-Models"
+                                target="_blank">Weather Prediction</a></h3>
+                        <p class="project-description">
+                            Ensemble weather prediction system utilizing Decision Trees, Random Forests, SVMs, and
+                            Gradient Boosting over 10,000+ records, paired with a web UI for day-wise forecasts.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Ensemble Methods</span>
+                            <span class="project-tag">Random Forest</span>
+                            <span class="project-tag">SVM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/k-karthik18/Weather-Prediction-using-ML-Models" target="_blank"
+                                class="project-link">
+                                GitHub Code ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Achievements and Research Papers Section -->
+        <section id="academic" class="academic-section">
+            <!-- Background shapes for Academic -->
+            <!-- Left Prism -->
+            <div class="bg-shape shape-prism" style="width: 60px; height: 60px; top: 30%; left: -50px;"></div>
+            <!-- Right Dots -->
+            <div class="bg-shape shape-dots" style="width: 90px; height: 90px; top: 60%; right: -60px;"></div>
+            <span class="section-tag">005 — Academic & Achievements</span>
+            <h2>Recognition & contributions that define my path</h2>
+
+            <!-- Toggle Buttons Container -->
+            <div class="toggle-container">
+                <div class="toggle-bar">
+                    <button class="toggle-tab active" data-target="achievements">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                            <path d="M4 22h16" />
+                            <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34" />
+                            <path d="M12 2a4 4 0 0 1 4 4v5H8V6a4 4 0 0 1 4-4Z" />
+                        </svg>
+                        Achievements
+                    </button>
+                    <button class="toggle-tab" data-target="papers">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Research Papers
+                    </button>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="toggle-content">
+                <!-- Achievements Tab Content -->
+                <div id="achievements" class="tab-pane active">
+                    <div class="academic-grid">
+                        <!-- LeetCode Achievement -->
+                        <div class="academic-card">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path
+                                        d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.8 9.799a1.373 1.373 0 0 0 0 1.942l9.8 9.799a1.374 1.374 0 0 0 1.942 0l9.8-9.799a1.373 1.373 0 0 0 0-1.942l-9.8-9.799a1.374 1.374 0 0 0-.981-.414zm0 2.686l8.4 8.399-8.4 8.4-8.4-8.4 8.4-8.399zm-4.2 6.3a1.4 1.4 0 0 0-.99.41a1.4 1.4 0 0 0 0 1.98l4.2 4.2a1.4 1.4 0 0 0 1.98 0 1.4 1.4 0 0 0 0-1.98l-4.2-4.2a1.4 1.4 0 0 0-.99-.41z" />
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <h3>Solved 100+ LeetCode Problems</h3>
+                                <p>Consistently solving Data Structures and Algorithms challenges to build solid
+                                    problem-solving foundations.</p>
+                                <a href="https://leetcode.com/u/k_karthik-18/" target="_blank"
+                                    class="project-link">LeetCode Profile ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- Oracle Cert -->
+                        <div class="academic-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <h3>Oracle Cloud Infrastructure 2025 Generative AI Professional</h3>
+                                <p>Professional certification validating expertise in large language models,
+                                    retrieval-augmented generation (RAG), and deploying generative AI solutions on
+                                    Oracle Cloud.</p>
+                                <p class="card-meta">Code: 1Z0-1127-25 • Issued by Oracle</p>
+                                <a href="https://drive.google.com/file/d/1aYVqc2-8bZumJLRgJtA76UFqy2Ur19wE/view?usp=sharing"
+                                    target="_blank" class="project-link">View Certificate ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- SIH Hackathon -->
+                        <div class="academic-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="m10 5-3-3m0 0L4 5m3-3v11m10-8 3-3m0 0-3-3m3 3H7m13 14H4M4 14h16" />
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <h3>Smart India Hackathon (SIH) Participant</h3>
+                                <p>Selected and actively participated in building solutions for national-level problem
+                                    statements in SIH 2024 & 2025.</p>
+                                <p class="card-meta">Issued by Government of India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Papers Tab Content -->
+                <div id="papers" class="tab-pane">
+                    <div class="academic-grid">
+                        <!-- Paper 1 -->
+                        <div class="academic-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                    <path d="M6 6h10M6 10h10" />
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <h3>Deep Learning for Speech Emotion Recognition</h3>
+                                <p>Research on applying Convolutional Neural Networks and Bidirectional LSTMs to
+                                    classify human emotions from speech audio signals with acoustic explainability.</p>
+                                <p class="card-meta">Team Member / Co-Author</p>
+                                <a href="https://drive.google.com/file/d/1lwuaMsFFowqeKFFuFpi_-0STaeX2JTmM/view?usp=sharing"
+                                    target="_blank" class="project-link">View Publication ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- Paper 2 -->
+                        <div class="academic-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                    <path d="M6 6h10M6 10h10" />
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <h3>Reinforcement Learning applied to Pac-Man</h3>
+                                <p>Explored state-action values, feature-based Q-learning, Approximate Q-learning, and
+                                    SARSA configurations for navigation intelligence in maze tasks.</p>
+                                <p class="card-meta">Team Member / Co-Author</p>
+                                <a href="https://drive.google.com/file/d/15LqZJCe_dqeNNI4-7jdm5lpmVyNWnK-h/view?usp=sharing"
+                                    target="_blank" class="project-link">View Publication ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- Paper 3 -->
+                        <div class="academic-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                    <path d="M6 6h10M6 10h10" />
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <h3>VoxAssist: Speech-to-Text Translation</h3>
+                                <p>Explored state-of-the-art open-source audio transcriber models, utilizing Whisper to
+                                    build localized translation models from conversational speech inputs.</p>
+                                <p class="card-meta">Team Member / Co-Author</p>
+                                <a href="https://drive.google.com/file/d/1dweeA3qDr893B8jhXsGHp6uKbHLqZanF/view?usp=sharing"
+                                    target="_blank" class="project-link">View Publication ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Let's Talk Section (Screenshot 4) -->
+        <section id="contact" class="footer-section">
+            <!-- Background shapes for Contact -->
+            <!-- Left Ring -->
+            <div class="bg-shape shape-ring" style="width: 180px; height: 180px; top: 10%; left: -90px;"></div>
+            <!-- Right Prism -->
+            <div class="bg-shape shape-prism" style="width: 50px; height: 50px; top: 40%; right: -40px;"></div>
+            <span class="section-tag">006 — Let's Work Together</span>
+
+            <div class="footer-columns">
+                <div class="footer-left">
+                    <h2>Ready to bring your next project to life?</h2>
+                    <p class="footer-desc">
+                        I'm always excited to work on new projects, solve interesting problems, and collaborate with
+                        passionate builders. Let's discuss how we can create something amazing together.
+                    </p>
+                    <div class="footer-buttons">
+                        <a href="mailto:kosurikarthik07@gmail.com" class="btn-pill primary">
+                            <svg style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2; vertical-align:middle; margin-right:6px;"
+                                viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Mail Me
+                        </a>
+                        <!-- Link to the certification drive file or standard resume as a visual mock -->
+                        <a href="https://drive.google.com/file/d/1pKznEua4RKKLN6AERkuvtwgKy52WSvPQ/view?usp=sharing"
+                            target="_blank" class="btn-pill secondary">
+                            <svg style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2; vertical-align:middle; margin-right:6px;"
+                                viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            View Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="status-card">
+                        <div class="status-card-badge">
+                            <span class="status-dot"></span>
+                            Currently
+                        </div>
+                        <h4>Available for new projects</h4>
+                        <p>Based in AP, India<br>Open to remote collaboration</p>
+
+                        <div class="response-time">
+                            <div class="response-label">Typical response time</div>
+                            <div class="response-value">&lt; 24 hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Karthik Kosuri. All rights reserved.<br><span
+                        style="font-size:0.75rem; opacity:0.7;">Designed & developed with ❤️ in India.</span></p>
+
+                <!-- Social links (Only LinkedIn, GitHub, Gmail) -->
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/karthik-kosuri-0764702b7/" target="_blank"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/k-karthik18" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:kosurikarthik07@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <button class="back-to-top" aria-label="Scroll to top"
+                        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 15-6-6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
