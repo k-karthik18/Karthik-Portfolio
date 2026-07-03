@@ -1061,31 +1061,126 @@ body.light-theme .card-icon {
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 4.5rem 0;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+  }
+
   .scroll-explore {
     margin-left: 0;
     margin-top: 1rem;
     width: 100%;
+    justify-content: center;
   }
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
   .navbar {
-    padding: 0.5rem 1rem;
-    gap: 1.5rem;
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+    gap: 1rem;
+    justify-content: space-between;
   }
-  .nav-links, .theme-toggle {
-    display: none;
+
+  .nav-links {
+    display: none; /* Hide standard navigation links on mobile */
   }
+
+  .theme-toggle {
+    display: flex; /* Keep the theme toggle visible on mobile */
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
   .hero-buttons {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .exp-card {
+    padding: 1.5rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .exp-period {
+    font-size: 0.8rem;
+  }
+
+  .project-card-horizontal {
+    padding: 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .toggle-bar {
+    display: flex;
+    width: 100%;
+  }
+
+  .toggle-tab {
+    flex: 1;
+    justify-content: center;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .academic-card {
+    padding: 1.25rem;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-desc {
+    font-size: 1rem;
+  }
+
   .footer-buttons {
     flex-direction: column;
   }
+
   .footer-bottom {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-socials {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bg-shape {
+    display: none; /* Hide background decorative shapes on mobile to keep layout clean */
   }
 }
 
