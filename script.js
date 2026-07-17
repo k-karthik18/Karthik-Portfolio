@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
   expCards.forEach(card => {
     card.addEventListener("click", (e) => {
-      // If clicking inside links, do not toggle
-      if (e.target.closest("a")) return;
+      // If clicking inside links or the expanded details content, do not toggle
+      if (e.target.closest("a") || e.target.closest(".exp-content-expanded")) return;
       
       const isExpanded = card.classList.contains("expanded");
       
