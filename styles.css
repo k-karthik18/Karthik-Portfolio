@@ -472,14 +472,27 @@ body.light-theme .skill-tag:hover {
   border: 1px solid var(--surface-border);
   border-radius: 16px;
   padding: 2.5rem;
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exp-card-expandable {
+  cursor: pointer;
+}
+
+.exp-card-expandable:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 30px rgba(0, 210, 255, 0.04);
+}
+
+body.light-theme .exp-card-expandable:hover {
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.06);
 }
 
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1.5rem;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -502,25 +515,168 @@ body.light-theme .skill-tag:hover {
   color: var(--text-secondary);
 }
 
-.exp-highlights {
+/* Toggle Indicator Styling */
+.exp-toggle-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.exp-card-expandable:hover .exp-toggle-indicator {
+  color: var(--accent-color);
+}
+
+.exp-chevron {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.exp-card.expanded .exp-chevron {
+  transform: rotate(180deg);
+}
+
+/* Expanding Height Grid Transition */
+.exp-content-expanded {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exp-card.expanded .exp-content-expanded {
+  grid-template-rows: 1fr;
+}
+
+.exp-content-inner {
+  overflow: hidden;
+}
+
+.exp-details-body {
+  padding-top: 2rem;
+  border-top: 1px solid var(--surface-border);
+  margin-top: 1.5rem;
+}
+
+body.light-theme .exp-details-body {
+  border-top-color: #e4e4e7;
+}
+
+.exp-overview {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.exp-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-col h4 {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exp-col h4::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.exp-col-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.exp-highlights li {
+.exp-col-list li {
   position: relative;
-  padding-left: 1.5rem;
-  color: var(--text-secondary);
+  padding-left: 1.25rem;
   font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
-.exp-highlights li::before {
+.exp-col-list li::before {
   content: "▹";
   position: absolute;
   left: 0;
   color: var(--accent-color);
+}
+
+.exp-mockup {
+  background: #18181b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-theme .exp-mockup {
+  background: #f4f4f5;
+  border-color: #e4e4e7;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+}
+
+.exp-mockup .project-img-wrapper {
+  aspect-ratio: 1.6 / 1;
+}
+
+/* Infrastructure / Bottom section */
+.exp-infra {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+body.light-theme .exp-infra {
+  border-top-color: rgba(0, 0, 0, 0.04);
+}
+
+.exp-infra h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exp-infra h4::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
 }
 
 /* Projects Section (Horizontal layouts like Screenshot 3) */
@@ -1079,6 +1235,11 @@ body.light-theme .card-icon {
     margin-top: 1rem;
     width: 100%;
     justify-content: center;
+  }
+
+  .exp-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 

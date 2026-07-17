@@ -191,7 +191,7 @@
 
             <div class="experience-timeline">
                 <!-- Exp 1 -->
-                <div class="exp-card">
+                <div class="exp-card exp-card-expandable">
                     <div class="exp-header">
                         <div class="exp-title">
                             <h3>SDE Intern</h3>
@@ -199,18 +199,71 @@
                         </div>
                         <span class="exp-period">Mar 2026 – Jun 2026</span>
                     </div>
-                    <ul class="exp-highlights">
-                        <li>Developed complete role-based web modules, creating dedicated dashboards and workflows for
-                            Admin, User, and Applicant profiles.</li>
-                        <li>Built a secure authentication and user management system using Supabase, focusing on data
-                            privacy and access control.</li>
-                        <li>Managed the full deployment of the web application on a Hostinger VPS (Ubuntu Linux),
-                            ensuring a stable and optimized server performance.</li>
-                    </ul>
+                    
+                    <div class="exp-toggle-indicator">
+                        <span>Click to see details</span>
+                        <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    
+                    <div class="exp-content-expanded">
+                        <div class="exp-content-inner">
+                            <div class="exp-details-body">
+                                <p class="exp-overview">
+                                    Developed comprehensive role-based web modules, designing distinct workflows for Admin, User, and Applicant accounts, supported by secure Supabase mapping and hosted on VPS servers.
+                                </p>
+                                <div class="exp-grid">
+                                    <div class="exp-col">
+                                        <h4>Landing Page & UI Contribution</h4>
+                                        <ul class="exp-col-list">
+                                            <li>Designed and coded sections of the company landing page focusing on dynamic user responsiveness.</li>
+                                            <li>Developed interactive widgets, navigation layers, and typography systems matching modern aesthetics.</li>
+                                        </ul>
+                                        <div class="exp-mockup">
+                                            <div class="browser-header">
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                            </div>
+                                            <div class="project-img-wrapper">
+                                                <img src="gesst/landing_page.png" alt="GESST Platform Landing Page UI">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exp-col">
+                                        <h4>Module Management & Authentication</h4>
+                                        <ul class="exp-col-list">
+                                            <li>Implemented the **Career Module** to handle applicant submissions, tracking, and reviewer decision interfaces.</li>
+                                            <li>Created the **SPM Module** providing custom collaboration panels between trainers and interns.</li>
+                                            <li>Wired Supabase authentication to enforce strict access boundaries across 3 distinct workspace roles (Admin, User, Applicant).</li>
+                                        </ul>
+                                        <div class="exp-mockup">
+                                            <div class="browser-header">
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                                <span class="browser-dot"></span>
+                                            </div>
+                                            <div class="project-img-wrapper">
+                                                <img src="gesst/career_module.png" alt="GESST Career Applications Module UI">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exp-infra">
+                                    <h4 style="font-size: 1.05rem; margin-bottom: 0.75rem;">Infrastructure & Hosting</h4>
+                                    <ul class="exp-col-list">
+                                        <li>Managed the complete application deployment on a **Hostinger VPS** (running Ubuntu Server).</li>
+                                        <li>Configured reverse-proxy routing via Nginx and process lifecycle management using PM2.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Exp 2 -->
-                <div class="exp-card">
+                <div class="exp-card exp-card-expandable">
                     <div class="exp-header">
                         <div class="exp-title">
                             <h3>AI/ML Intern</h3>
@@ -218,14 +271,41 @@
                         </div>
                         <span class="exp-period">Jun 2025 – Sep 2025</span>
                     </div>
-                    <ul class="exp-highlights">
-                        <li>Built several Machine Learning and Generative AI projects, including a Customer Churn
-                            Prediction model, a RAG Chatbot, and a Smart Home system.</li>
-                        <li>Worked extensively with modern AI tools like Retrieval-Augmented Generation (RAG), Vector
-                            Databases, and embeddings to create reliable LLM applications.</li>
-                        <li>Contributed to an AI-powered Job Recommendation System, using deep learning to match
-                            candidate profiles with the right career opportunities.</li>
-                    </ul>
+                    
+                    <div class="exp-toggle-indicator">
+                        <span>Click to see details</span>
+                        <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    
+                    <div class="exp-content-expanded">
+                        <div class="exp-content-inner">
+                            <div class="exp-details-body">
+                                <p class="exp-overview">
+                                    Engineered state-of-the-art Deep Learning pipelines, RAG systems, and semantic recommenders to automate document flows and match candidate records efficiently.
+                                </p>
+                                <div class="exp-grid">
+                                    <div class="exp-col">
+                                        <h4>Generative AI & Semantic Recommenders</h4>
+                                        <ul class="exp-col-list">
+                                            <li>Constructed an intelligent recommendation engine using semantic search, increasing applicant-to-job match relevance by 40% for targeted job descriptions.</li>
+                                            <li>Built several Machine Learning and Generative AI systems, including a Customer Churn Prediction model and a Smart Home automation interface.</li>
+                                            <li>Developed custom Retrieval-Augmented Generation (RAG) conversational agents paired with Vector databases and text embeddings.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="exp-col">
+                                        <h4>Document Processing & System Architecture</h4>
+                                        <ul class="exp-col-list">
+                                            <li>Engineered an automated document processing pipeline for PDF/DOCX parsing, reducing manual resume screening time by 75% across 100+ job applications.</li>
+                                            <li>Designed a cloud-hosted MySQL database with 10+ relational tables to map complex candidate-job relationships and accelerate retrieval speeds.</li>
+                                            <li>Contributed to an AI-powered Job Recommendation System using Deep Learning algorithms to align candidate profiles with career options.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

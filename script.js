@@ -89,4 +89,31 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // Expandable Experience Cards Toggle
+  const expCards = document.querySelectorAll(".exp-card-expandable");
+  
+  expCards.forEach(card => {
+    card.addEventListener("click", (e) => {
+      // If clicking inside links, do not toggle
+      if (e.target.closest("a")) return;
+      
+      const isExpanded = card.classList.contains("expanded");
+      
+      // Close other cards first for a clean accordion effect
+      expCards.forEach(c => {
+        if (c !== card) {
+          c.classList.remove("expanded");
+          const indicatorText = c.querySelector(".exp-toggle-indicator span");
+          if (indicatorText) indicatorText.textContent = "Click to see details";
+        }
+      });
+      
+      card.classList.toggle("expanded");
+      const indicatorText = card.querySelector(".exp-toggle-indicator span");
+      if (indicatorText) {
+        indicatorText.textContent = isExpanded ? "Click to see details" : "Click to collapse details";
+      }
+    });
+  });
 });
