@@ -738,14 +738,22 @@ body.light-theme .browser-header {
 }
 
 .browser-dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: #27272a;
+  opacity: 0.9;
 }
 
-body.light-theme .browser-dot {
-  background: #a1a1aa;
+.browser-dot:nth-child(1) {
+  background: #ff5f56;
+}
+
+.browser-dot:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.browser-dot:nth-child(3) {
+  background: #27c93f;
 }
 
 .project-img-wrapper {
